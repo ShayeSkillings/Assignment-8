@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta data, not shown to site visitors-->
+    <meta charset="UTF-8">
+    <meta name="author" content="cory mckague">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarillo by Morning</title>
+    <!-- Style additions to be used in div, class and span-->
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {    
+            background-color: lightorange;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1pt solid black;
+        }
+
+        .lyrics {
+            background-color: burntorange;
+            color: black;
+            font-size: small;
+            font-family:'Arial', sans-serif;
+        }
+    </style>
+</head>
+<!-- all style elements inherited from the body style assigned above-->
+<body>
+    <!-- This is cover art for the song Amarillo by Morning by George Strait -->
+    <div id="fan-art" class="container">
+        <h1>Amarillo by Morning</h1>
+        <h2>George Strait</h2>
+        <img src="images/amarillo_cover_art.jpg" height="500" width="500" alt="Amarillo by Morning Cover Artwork">
+    </div>
+    <!-- This division is for the audio track saved locally in different media types-->
+    <div id="audio" class="container">
+        <h1>Audio</h1>
+        <audio preload controls>
+            <source src="./media/amarillo_by_morning.mp3" type="audio/mpeg" />
+            <source src="./media/amarillo_by_morning.ogg" type="audio/ogg" codec="vorbis" />
+            <source src="./media/amarillo_by_morning.wav" type="audio/wav">
+            <p> This is the song Amarillo by Morning, by George Strait</p>
+            <p> Your browser does not support this audio</p>
+        </audio>
+    </div>
+    <!-- This division is for the lyrics using the lyric class-->
+    <div id="lyrics" class="lyrics">
+        <h1>Lyrics</h1>
+        <p>Amarillo by mornin', up from San Antone</p>
+        <p>Everything that I got is just what I've got on</p>
+        <p>When that Sun is high in that Texas sky 
+        <p>I'll be buckin' at the county fair
+        <p>Amarillo by mornin', Amarillo I'll be there</p>
+        <p>They took my saddle in Houston, broke my leg in Santa Fe</p>
+        <p>Lost my wife and a girlfriend, somewhere along the way
+        <p>But I'll be lookin' for eight, When they pull that gate</p>
+        <p>And I hope that judge ain't blind</p>
+        <p>Amarillo by mornin', Amarillo's on my mind</p>
+        <p>Amarillo by mornin', up from San Antone</p>
+        <p>Everything that I got is just what I've got on</p>
+        <p>I ain't got a dime, but what I got is mine</p>
+        <p>I ain't rich, but Lord, I'm free</p>
+        <p>Amarillo by morning, Amarillo's where I'll be</p>
+    </div>
+    <!-- This division contains the copyright information -->
+    <div id="copyright" class="container">
+        <h1>Copyright &copy;</h1>
+        <p>I do not own any of this material. It is copyright of George Strait.</p>
+    </div>
+</body>
+</html>
